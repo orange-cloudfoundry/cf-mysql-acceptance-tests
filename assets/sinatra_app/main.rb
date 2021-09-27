@@ -163,7 +163,8 @@ def load_mysql(service_name)
     :username => mysql_service['username'],
     :port => mysql_service['port'].to_i,
     :password => mysql_service['password'],
-    :database => mysql_service['name']
+    :database => mysql_service['name'],
+    :sslverify => true
   )
   result = client.query("SELECT table_name FROM information_schema.tables WHERE table_name = 'data_values'")
   client.query("CREATE TABLE IF NOT EXISTS data_values ( id VARCHAR(20), data_value VARCHAR(20)); ") if result.count != 1
