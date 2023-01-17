@@ -108,9 +108,10 @@ end
 get '/service/mysql/:service_name/:key' do
   client = load_mysql(params[:service_name])
   query = client.query("select data_value from data_values where id = '#{params[:key]}'")
-  value = query.first['data_value'] rescue nil
+  #value = query.first['data_value'] rescue nil
+  value = query.first['data_value']
   client.close
-  value
+  #value
 end
 
 post '/service/mysql/:service_name/:key' do
