@@ -4,6 +4,11 @@ This app is used by the acceptance tests and is an example of how you can use th
 
 The app allows you to write and read data in the form of key:value pairs to a Riak CS bucket using RESTful endpoints.
 
+### Build
+#### pre-requisite
+You need to have mysql client libary installed before running `bundle package` 
+    `sudo apt-get install libmysqlclient-dev`
+
 ### Getting Started
 
 Install the app by pushing it to your Cloud Foundry and binding with the Riak CS service
