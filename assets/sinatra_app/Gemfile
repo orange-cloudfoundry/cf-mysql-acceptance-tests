@@ -3,6 +3,6 @@ ruby '> 3.0.0'
 # Without any bound services, app runs on sqlite3
 #.. but may also be staged with mysql
 gem 'sinatra'
-gem 'thin'
+# gem 'thin'
 gem 'mysql2'
 gem 'rackup'
