@@ -3,9 +3,11 @@ GEM
   specs:
     base64 (0.2.0)
     bigdecimal (3.1.8)
+    logger (1.6.1)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
     mysql2 (0.5.6)
+    ostruct (0.6.0)
     rack (3.1.7)
     rack-protection (4.0.0)
       base64 (>= 0.1.0)
@@ -30,7 +32,9 @@ PLATFORMS
 
 DEPENDENCIES
   bigdecimal
+  logger (~> 1.6, >= 1.6.1)
   mysql2
+  ostruct (~> 0.6.0)
   rackup
   sinatra
 

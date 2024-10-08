@@ -6,3 +6,10 @@ integration_config.json
 integration-config.json
 *.test
 **/out/
+
+/vendor
+.idea/
+*.log
+*.iml
+/vcap-service.env
+/assets/sinatra_app/vendor/

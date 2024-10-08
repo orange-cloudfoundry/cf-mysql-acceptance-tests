@@ -1,0 +1,31 @@
+{
+  "mariadb-dedicated": [
+    {
+      "binding_guid": "6c38cfe4-1ca4-479a-a1be-9f3e41f16af0",
+      "binding_name": null,
+      "credentials": {
+        "hostname": "${SERVICE_HOST}",
+        "jdbcUrl": "jdbc:mysql://${SERVICE_HOST}:${SERVICE_PORT}/${DATABASE_NAME}?user=${SERVICE_USERNAME}&password=${SERVICE_PASSWORD}&useSSL=true&enabledTLSProtocols=TLSv1.2&enabledSslProtocolSuites=TLSv1.2",
+        "name": "${DATABASE_NAME}",
+        "password": "${SERVICE_PASSWORD}",
+        "uri": "mysql://${SERVICE_USERNAME}:${SERVICE_PASSWORD}@${SERVICE_HOST}:${SERVICE_PORT}/${DATABASE_NAME}?reconnect=true",
+        "username": "${SERVICE_USERNAME}",
+        "port": ${SERVICE_PORT}
+    },
+      "instance_guid": "bd0fb925-6d4d-4cb5-b5ff-87cb23687937",
+      "instance_name": "cf-mysql-smoketest-1727438778",
+      "label": "mariadb-dedicated",
+      "name": "${DATABASE_NAME}-service",
+      "plan": "medium",
+      "provider": null,
+      "syslog_drain_url": null,
+      "tags": [
+        "mysql"
+      ],
+      "volume_mounts": []
+      }
+  ]
+}
+
+
+
