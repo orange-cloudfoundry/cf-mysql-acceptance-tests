@@ -12,4 +12,3 @@ integration-config.json
 *.log
 *.iml
 /vcap-service.env
-/assets/sinatra_app/vendor/
